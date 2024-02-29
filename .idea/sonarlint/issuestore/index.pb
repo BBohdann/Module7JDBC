@@ -106,3 +106,15 @@ w
 G.idea/sonarlint/issuestore/0/d/0d09b4bb29b88dfe1726c08c568e1e8ae84541a9,f\6\f6653782f846e2337a1eb42fd6285fc0efe76366
 Å
 Q.idea/sonarlint/securityhotspotstore/0/d/0d09b4bb29b88dfe1726c08c568e1e8ae84541a9,f\5\f5c31e7aa2df5fefa91f37c67770a6a53792191b
+Y
+)src/main/java/config/ResultSetMapper.java,1\1\11706689c844320a5907f0cb1c3b7a734724c205
+e
+5src/main/java/mapper/MaxProjectCountClientMapper.java,7\c\7ce53374d3c01fbb33d75e99e8f5b1901bdcfbe9
+]
+-src/main/java/mapper/ProjectPricesMapper.java,7\8\7857e234154a103770cfdb9fbeefc5f4c5597511
+_
+/src/main/java/mapper/MaxSalaryWorkerMapper.java,c\8\c801bff6361dd7bdf8a0c060d19a3a6f7db49439
+e
+5src/main/java/mapper/YoungestEldestWorkersMapper.java,0\3\03ebbec3863ae3d7dae2b73e0f2d2339d0400df2
+^
+.src/main/java/mapper/LongestProjectMapper.java,6\1\614bc625098984e8bfc124d8333170dca480867d

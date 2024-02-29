@@ -1,23 +1,9 @@
 
-b	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(ª£±ˆ8œ®ş•ß1
-g	java:S112+"FDefine and throw a dedicated exception instead of using a generic one.(óğÆ³ıÿÿÿÿ8®ş•ß1
-b	java:S112:"FDefine and throw a dedicated exception instead of using a generic one.(ùÃÑ·8 ®ş•ß1
-b	java:S112J"FDefine and throw a dedicated exception instead of using a generic one.(ùÃÑ·8¡®ş•ß1
-b	java:S112Y"FDefine and throw a dedicated exception instead of using a generic one.(ùÃÑ·8¡®ş•ß1
-b	java:S112m"FDefine and throw a dedicated exception instead of using a generic one.(ùÃÑ·8ÜÎ®—ß1
-b	java:S112|"FDefine and throw a dedicated exception instead of using a generic one.(ùÃÑ·8µ’¯—ß1
-s
-java:S1192:"VDefine a constant instead of duplicating this literal "Error executing query" 5 times.(ùÃÑ·8£®ş•ß1
-s
-java:S1192*"VDefine a constant instead of duplicating this literal "Exception. Reason: %s" 6 times.(î‘Ç±8£®ş•ß1
-»
-java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(Ñ°Ù®şÿÿÿÿ8ö®ş•ß1
-G	java:S106"+Replace this use of System.out by a logger.(ÃÑÙø8˜¯ş•ß1
-G	java:S106*"+Replace this use of System.out by a logger.(î‘Ç±8­¯ş•ß1
-G	java:S1069"+Replace this use of System.out by a logger.(î‘Ç±8À¯ş•ß1
-G	java:S106I"+Replace this use of System.out by a logger.(î‘Ç±8Ê¯ş•ß1
-G	java:S106X"+Replace this use of System.out by a logger.(î‘Ç±8Õ¯ş•ß1
-G	java:S106l"+Replace this use of System.out by a logger.(î‘Ç±8±Ï®—ß1
-G	java:S106{"+Replace this use of System.out by a logger.(î‘Ç±8ƒ“¯—ß1
-J
-java:S1128"-Remove this unused import 'java.time.ZoneId'.( Æ½“8„İÔ—ß1
+b	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(ª£±ˆ8Û¨˜ß1
+g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(óğÆ³ıÿÿÿÿ8Ü¨˜ß1
+b	java:S112+"FDefine and throw a dedicated exception instead of using a generic one.(ùÃÑ·8Ş¨˜ß1
+G	java:S106"+Replace this use of System.out by a logger.(ÃÑÙø8§¨˜ß1
+G	java:S106"+Replace this use of System.out by a logger.(î‘Ç±8­¨˜ß1
+G	java:S106*"+Replace this use of System.out by a logger.(î‘Ç±8ä¨˜ß1
+A
+java:S1128"$Remove this unused import 'storage'.(©‚ç¸8§ªç˜ß1
