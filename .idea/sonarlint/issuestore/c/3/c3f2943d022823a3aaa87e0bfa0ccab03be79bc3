@@ -1,11 +1,0 @@
-
-
-java:S1192"mDefine a constant instead of duplicating this literal "Sorry, unable to find application.properties" 3 times.(¦ë›Úÿÿÿÿÿ8ôıÜŒß1
-v
-java:S1192"TDefine a constant instead of duplicating this literal "postgres.properties" 3 times.(éŞÒãıÿÿÿÿ8ëµ²ß1
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(›Û¬ıøÿÿÿÿ
-\
-java:S1118":Add a private constructor to hide the implicit public one.(ÍöÔóùÿÿÿÿ8ÀşÜŒß1
-L	java:S106"+Replace this use of System.out by a logger.(¦ë›Úÿÿÿÿÿ8ƒÿÜŒß1
-L	java:S106)"+Replace this use of System.out by a logger.(¦ë›Úÿÿÿÿÿ8œÿÜŒß1
-L	java:S106;"+Replace this use of System.out by a logger.(¦ë›Úÿÿÿÿÿ8µÿÜŒß1
