@@ -1,5 +1,6 @@
 package config;
 
+import forPreparedQuery.InsertInfoDB;
 import forProp.PropertyReader;
 import storage.*;
 
@@ -7,6 +8,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.sql.*;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,6 +27,26 @@ public class Database {
             throw new RuntimeException("Can not create connection.");
         }
     }
+    public static int[] executeUpdate( PreparedStatement statement) {
+        try {
+            connection.setAutoCommit(false);
+        try {
+            int[] result = statement.executeBatch();
+            connection.commit();
+            connection.setAutoCommit(true);
+            return result;
+        } catch (SQLException e) {
+            connection.rollback();
+            System.out.println(String.format("Exception. Reason: %s", e.getMessage()));
+            throw new RuntimeException("Can't run query");
+        }
+        } catch (SQLException e) {
+            System.out.println(String.format("Exception. Reason: %s", e.getMessage()));
+            throw new RuntimeException("Can't set auto commit mode");
+        }
+    }
+
+
     public static int executeUpdate(String query) {
         try (Statement statement = connection.createStatement()) {
             return statement.executeUpdate(query);
