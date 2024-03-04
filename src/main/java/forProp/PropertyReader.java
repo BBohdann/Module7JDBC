@@ -12,7 +12,7 @@ public class PropertyReader {
             Properties prop = new Properties();
 
             if (input == null) {
-                System.out.println("Sorry, unable to find application.properties");
+                System.out.println("Sorry, unable to find properties");
                 return null;
             }
             prop.load(input);
@@ -38,7 +38,7 @@ public class PropertyReader {
             Properties prop = new Properties();
 
             if (input == null) {
-                System.out.println("Sorry, unable to find application.properties");
+                System.out.println("Sorry, unable to find properties");
                 return null;
             }
             prop.load(input);
@@ -56,7 +56,7 @@ public class PropertyReader {
             Properties prop = new Properties();
 
             if (input == null) {
-                System.out.println("Sorry, unable to find application.properties");
+                System.out.println("Sorry, unable to find properties");
                 return null;
             }
             prop.load(input);

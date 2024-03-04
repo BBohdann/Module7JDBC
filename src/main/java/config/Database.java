@@ -3,6 +3,9 @@ package config;
 import forProp.PropertyReader;
 import storage.*;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -54,4 +57,13 @@ public class Database {
         return connection;
     }
 
+    public static String getStringQuery(String filePaths) {
+        String query = "";
+        try {
+            query = Files.readString(Paths.get(filePaths));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return query;
+    }
 }

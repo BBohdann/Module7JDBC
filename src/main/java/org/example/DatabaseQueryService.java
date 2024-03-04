@@ -19,49 +19,39 @@ public class DatabaseQueryService {
     public static List<storage.LongestProject> longestProgect = new ArrayList<>();
 
     public static void main(String[] args) {
-        clients = executeQuery(insertDB("sql/find_max_projects_client.sql"), new MaxProjectCountClientMapper());
+        clients = executeQuery(Database.getStringQuery("sql/find_max_projects_client.sql"), new MaxProjectCountClientMapper());
         System.out.println("--------------- Clients ---------------");
         for (MaxProjectCountClient client : clients) {
             System.out.println(client);
         }
         System.out.println("---------------------------------------");
 
-        projectPrices = executeQuery(insertDB("sql/print_project_prices.sql"), new ProjectPricesMapper());
+        projectPrices = executeQuery(Database.getStringQuery("sql/print_project_prices.sql"), new ProjectPricesMapper());
         System.out.println("-------------- Prices -----------------");
         for (ProjectPrices price : projectPrices) {
             System.out.println(price);
         }
         System.out.println("---------------------------------------");
 
-        maxSalary = executeQuery(insertDB("sql/find_max_salary_worker.sql"), new MaxSalaryWorkerMapper());
+        maxSalary = executeQuery(Database.getStringQuery("sql/find_max_salary_worker.sql"), new MaxSalaryWorkerMapper());
         System.out.println("-------------- Salary -----------------");
         for (MaxSalaryWorker worker : maxSalary) {
             System.out.println(worker);
         }
         System.out.println("---------------------------------------");
 
-        youngestEldestWorkers = executeQuery(insertDB("sql/find_youngest_eldest_workers.sql"), new YoungestEldestWorkersMapper());
+        youngestEldestWorkers = executeQuery(Database.getStringQuery("sql/find_youngest_eldest_workers.sql"), new YoungestEldestWorkersMapper());
         System.out.println("------------- Workers -----------------");
         for (YoungestEldestWorkers worker : youngestEldestWorkers) {
             System.out.println(worker);
         }
         System.out.println("---------------------------------------");
 
-        longestProgect = executeQuery(insertDB("sql/find_longest_project.sql"), new LongestProjectMapper());
+        longestProgect = executeQuery(Database.getStringQuery("sql/find_longest_project.sql"), new LongestProjectMapper());
         System.out.println("------------ Longest Projects ---------");
         for (LongestProject project : longestProgect) {
             System.out.println(project);
         }
         System.out.println("---------------------------------------");
-    }
-
-    public static String insertDB(String filePaths) {
-        String query = "";
-        try {
-            query = Files.readString(Paths.get(filePaths));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return query;
     }
 }
